@@ -226,8 +226,8 @@ def getABI(args, qtMajorVersion):
             compiler = "clang"
             arch = CraftBootstrap.promptForChoice(
                 "Select target architecture",
-                ["x86_64", "arm64"],
-                "x86_64",
+                ["arm64", "x86_64"],
+                "arm64",
                 returnDefaultWithoutPrompt=args.use_defaults,
             )
         else:
